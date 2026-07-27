@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "deploy": "bun run build && wrangler deploy",
+    "preview": "bun run build && wrangler dev"
   },
   "devDependencies": {
+    "vitepress": "1.0.0-alpha.28",
     "vue": "3.2.44",
-    "vitepress": "1.0.0-alpha.28"
+    "wrangler": "^4.114.0"
   },
   "pnpm": {
     "peerDependencyRules": {
