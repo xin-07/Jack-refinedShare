@@ -33,6 +33,7 @@ docs/
 bun run dev      # 启动开发服务器
 bun run build    # 构建生产版本
 bun run serve    # 预览生产构建
+bun run deploy   # 构建并部署到 Cloudflare Workers
 ```
 
 ## 开发约定
