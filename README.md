@@ -2,6 +2,8 @@
 
 基于 VitePress 的会员内容分享网站，涵盖思想实验、商业启蒙、读书笔记等栏目。
 
+**项目网址**：[https://jack.xiny06.workers.dev/](https://jack.xiny06.workers.dev/)
+
 ## 项目简介
 
 本站点用于分享「Jack要加油」频道的内容，包含以下栏目：
