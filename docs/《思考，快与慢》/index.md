@@ -21,3 +21,12 @@ layout: doc
 通过每天一个思维实验，跟着Jack一起，识别直觉陷阱，在投资、消费、工作和感情中做出更清醒的决定。
 
 [从第1天开始 →](/《思考，快与慢》/docs/《思考，快与慢》｜第1天.md)
+
+> AI对话链接：
+> 
+> [DeepSeek](https://chat.deepseek.com/share/9s35nu4aisdxkv3l32)
+> 
+> [千问](https://www.qianwen.com/share/chat/cb912d2a998345499d0db8d2c1f0e991)
+> 
+> [ChatGPT](https://chatgpt.com/share/6a6ab10a-32d8-83ea-bd04-b2322f5eb3d9)
+> 
