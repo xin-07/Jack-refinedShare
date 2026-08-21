@@ -3,12 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "kill-port 5173 || echo no process to kill",
+    "preserve": "kill-port 4173 || echo no process to kill",
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs",
     "deploy": "bun run build && npx wrangler deploy"
   },
   "devDependencies": {
+    "kill-port": "^2.0.1",
     "vitepress": "^1.6.4",
     "vue": "^3.5.41"
   },
