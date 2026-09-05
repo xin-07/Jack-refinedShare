@@ -38,6 +38,7 @@ bun run deploy   # 构建并部署到 Cloudflare Workers
 
 ## 开发约定
 
+- AI 不能自行启动项目，项目启动交给人类操作，AI 只需告知启动指令即可
 - 所有内容文件位于 `docs/` 目录下
 - 每个栏目拥有独立的 `index.md` 和 `sidebar.ts`
 - 各栏目的侧边栏配置在 `docs/.vitepress/theme-config.ts` 中统一导入
