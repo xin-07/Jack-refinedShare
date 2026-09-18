@@ -16,6 +16,8 @@ const sidebarBusiness: DefaultTheme.SidebarGroup = {
     { text: '亚马逊', link: '/Jack商业启蒙/docs/Jack商业启蒙——亚马逊' },
     { text: '礼品卡', link: '/Jack商业启蒙/docs/Jack商业启蒙——礼品卡' },
     { text: 'VISA', link: '/Jack商业启蒙/docs/Jack商业启蒙——VISA' },
+    { text: 'HBM、DRAM、NAND', link: '/Jack商业启蒙/docs/Jack商业启蒙——HBM、DRAM、NAND' },
+    { text: '数据中心', link: '/Jack商业启蒙/docs/Jack商业启蒙——数据中心' },
   ],
 }
 
