@@ -45,3 +45,9 @@ bun run deploy   # 构建并部署到 Cloudflare Workers
 - 静态资源放在 `docs/public/` 目录下
 - 内容使用中文（zh-CN）编写
 - Markdown 文件在需要时使用 VitePress frontmatter（`layout: doc`）
+
+## 提交约定
+
+- 代码变更（`feat` / `fix` / `refactor` / `perf` / `test`）的 commit 必须同时包含 `Why:`（为什么改，根因）与 `What:`（具体做了什么）两行，否则 commit-msg 钩子拒绝提交
+- `docs` / `chore` / `style` 变更可省略 `Why:` / `What:`
+- 提交前自问：*设计错了？代码错了？测试错了？* 三者均为有效答案

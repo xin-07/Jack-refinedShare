@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+bun run scripts/check-commit-msg.js "$1"
