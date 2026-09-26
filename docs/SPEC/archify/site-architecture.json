@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Jack要加油 · 站点整体架构",
+    "locale": "zh-CN",
+    "output": "site-architecture.html",
+    "quality_profile": "showcase",
+    "viewBox": [1376, 580],
+    "views": [
+      { "id": "main-path", "label": "主浏览路径", "focus": ["readers", "site", "sec365"], "note": "读者访问站点并阅读每日更新的内容栏目。" },
+      { "id": "config-and-assets", "label": "配置与静态资源", "focus": ["theme", "site", "assets"], "note": "导航侧边栏与静态图文资源。" }
+    ]
+  },
+  "components": [
+    { "id": "readers", "type": "external", "label": "读者 / 会员", "sublabel": "订阅用户", "pos": [30, 60], "size": [150, 64] },
+    { "id": "theme", "type": "frontend", "label": "主题配置", "sublabel": "config.ts · theme-config.ts", "pos": [30, 190], "size": [160, 64] },
+    { "id": "assets", "type": "cloud", "label": "静态资源", "sublabel": "public/photo", "pos": [1150, 60], "size": [150, 58] },
+    { "id": "site", "type": "frontend", "label": "Jack要加油 站点", "sublabel": "VitePress · Vue 3", "tag": "zh-CN", "pos": [604, 60], "size": [180, 64] },
+    { "id": "sec365", "type": "frontend", "label": "365天思想实验", "sublabel": "98 篇 · 每日思想", "pos": [80, 470], "size": [156, 60] },
+    { "id": "secBusiness", "type": "frontend", "label": "Jack商业启蒙", "sublabel": "16 篇 · 每周公司", "pos": [264, 470], "size": [156, 60] },
+    { "id": "secThinking", "type": "frontend", "label": "《思考，快与慢》", "sublabel": "73 篇 · 读书笔记", "pos": [448, 470], "size": [156, 60] },
+    { "id": "secIsland", "type": "frontend", "label": "《小岛经济学》", "sublabel": "46 篇 · 读书笔记", "pos": [632, 470], "size": [156, 60] },
+    { "id": "secRich", "type": "frontend", "label": "《穷爸爸富爸爸》", "sublabel": "40 篇 · 读书笔记", "pos": [816, 470], "size": [156, 60] },
+    { "id": "secExquisite", "type": "frontend", "label": "Exquisite", "sublabel": "9 篇 · 精选", "pos": [1000, 470], "size": [156, 60] },
+    { "id": "secOther", "type": "frontend", "label": "Other", "sublabel": "67 篇 · 随笔", "pos": [1184, 470], "size": [156, 60] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "内容栏目 · docs/", "wraps": ["sec365", "secBusiness", "secThinking", "secIsland", "secRich", "secExquisite", "secOther"] }
+  ],
+  "connections": [
+    { "id": "c-readers-to-site", "from": "readers", "to": "site", "label": "浏览站点", "variant": "emphasis" },
+    { "id": "c-site-to-theme", "from": "site", "to": "theme", "label": "读取 导航/侧边栏", "variant": "dashed", "fromSide": "left", "toSide": "right" },
+    { "id": "c-site-to-365", "from": "site", "to": "sec365", "label": "每日思想", "fromSide": "bottom", "toSide": "top" },
+    { "id": "c-site-to-biz", "from": "site", "to": "secBusiness", "label": "每周公司", "fromSide": "bottom", "toSide": "top" },
+    { "id": "c-site-to-think", "from": "site", "to": "secThinking", "label": "读书笔记", "fromSide": "bottom", "toSide": "top" },
+    { "id": "c-site-to-island", "from": "site", "to": "secIsland", "label": "读书笔记", "fromSide": "bottom", "toSide": "top", "labelDy": 150 },
+    { "id": "c-site-to-rich", "from": "site", "to": "secRich", "label": "读书笔记", "fromSide": "bottom", "toSide": "top" },
+    { "id": "c-site-to-exq", "from": "site", "to": "secExquisite", "label": "精选", "fromSide": "bottom", "toSide": "top" },
+    { "id": "c-site-to-other", "from": "site", "to": "secOther", "label": "随笔", "fromSide": "bottom", "toSide": "top" },
+    { "id": "c-site-to-assets", "from": "site", "to": "assets", "label": "托管图文", "variant": "dashed", "fromSide": "right", "toSide": "left" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "内容栏目", "items": ["365天思想实验：98 篇 · 每日更新", "四本读书笔记专栏：《思考，快与慢》《小岛经济学》《穷爸爸富爸爸》", "Jack商业启蒙 · Exquisite 精选 · Other 随笔"] },
+    { "dot": "emerald", "title": "站点配置", "items": ["VitePress + Vue 3 · zh-CN", "导航与侧边栏在 theme-config.ts 统一导入", "全文搜索 search-config.ts"] },
+    { "dot": "violet", "title": "构建与交付", "items": ["Bun 打包构建后部署到 Cloudflare Workers", "静态图文资源存放于 public/photo"] }
+  ]
+}
