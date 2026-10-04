@@ -15,6 +15,9 @@ dist-ssr
 # VitePress cache
 docs/.vitepress/cache
 
+# Code graph cache
+.codegraph
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
