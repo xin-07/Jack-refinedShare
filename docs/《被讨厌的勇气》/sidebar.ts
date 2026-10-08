@@ -15,6 +15,7 @@ const sidebarCourage: DefaultTheme.SidebarGroup = {
     { text: '第5天', link: '/《被讨厌的勇气》/docs/《被讨厌的勇气》｜第5天' },
     { text: '第5天 答案', link: '/《被讨厌的勇气》/docs/《被讨厌的勇气》｜第5天答案' },
     { text: '第一周总结', link: '/《被讨厌的勇气》/docs/《被讨厌的勇气》｜第一周总结' },
+    { text: '第二周预告', link: '/《被讨厌的勇气》/docs/《被讨厌的勇气》｜第二周预告' },
   ],
 }
 

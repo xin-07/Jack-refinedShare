@@ -1,29 +1,41 @@
 # Jack要加油的内容分享
 
-<img src="/photo/Jack要加油的专属会员.jpg" alt="封面" style="width: 350px; border-radius: 12px; margin-bottom: 20px;">
+<img src="/photo/Jack要加油的专属会员.jpg" alt="封面" style="width: 350px; max-width: 100%; border-radius: 12px; margin-bottom: 20px;">
 
-<img src="/photo/开始做正事了.jpg" alt="开始做正事了" style="position: fixed !important; right: 40px !important; top: 100px !important; width: 320px !important; border-radius: 12px !important; z-index: 10 !important;">
+<img class="hero-fixed-poster" src="/photo/开始做正事了.jpg" alt="开始做正事了">
+
+<style>
+.hero-fixed-poster {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  margin: 16px 0 24px 0;
+}
+
+@media (min-width: 1200px) {
+  .hero-fixed-poster {
+    position: fixed;
+    right: 40px;
+    top: 100px;
+    width: 320px;
+    margin: 0;
+    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+</style>
 
 会员须知：会员内容主要分为固定和不定期栏目
 
-
-
 【固定栏目】
-
-
 
 1.365天思想实验（每天一次）
 
-
-
 每天围绕一个定律、效应、模型或思想实验。
-
 数学、经济学、物理、生物、心理学、行为学……
-
 希望你一年后，看世界的方式发生改变
-
 一年下来，就是300多篇思想积累
-
 
 
 2.每天解读书（每天两次+周末总结）
@@ -31,11 +43,9 @@
 中午提出问题，晚上分享我的思考，希望大家也能一起思考、一起输出
 
 
-
 3.商业启蒙（每周一次）
 
 每周研究一家优秀公司或者投资策略
-
 
 
 4.电影推荐（每周一次）
@@ -59,9 +69,7 @@
 【我希望你怎么使用这个会员】
 
 
-
 每天几分钟：思考，喂给AI互动，写下思考，录一分钟自己的想法或借助会员内容二创起号
-
 
 
 已经加入的朋友
