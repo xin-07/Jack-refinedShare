@@ -15,6 +15,9 @@ dist-ssr
 # VitePress cache
 docs/.vitepress/cache
 
+# Wrangler 临时目录（dry-run / 部署产物）
+.wrangler
+
 # Code graph cache
 .codegraph
 
