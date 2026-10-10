@@ -6,7 +6,8 @@
     "predev": "kill-port 5173 || echo no process to kill",
     "preserve": "kill-port 4173 || echo no process to kill",
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "check": "node scripts/check-sidebars.mjs",
+    "build": "node scripts/check-sidebars.mjs && vitepress build docs",
     "serve": "vitepress serve docs",
     "deploy": "bun run build && npx wrangler deploy",
     "prepare": "husky"

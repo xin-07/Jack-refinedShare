@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# pre-push 门禁 —— push 前本地执行「侧栏校验 + 构建」，
+# 拦住死链 / 孤儿 / markdown 死链，避免问题内容推上去后让自动部署当场失败。
+# 临时绕过：git push --no-verify（不推荐）
+bun run build
