@@ -64,7 +64,7 @@ bun run serve    # 预览生产构建
 新增或删除内容后运行 `bun run check`，`bun run build` 会自动先跑该校验；push 时 `.husky/pre-push` 钩子会执行 `bun run build`，校验失败则拒绝 push。它拦截三类事故：
 
 1. **死链**：`sidebar.ts` 的 link 指向不存在的 `.md`（如引号全角/半角不一致）
-2. **孤儿**：`docs/<栏目>/docs/` 下的文件没登记进 `sidebar.ts`（文章永远无法被访问）；写草稿时可临时用 `node scripts/check-sidebars.mjs --allow-orphans` 降级为警告
+2. **孤儿**：`docs/<栏目>/docs/` 下的文件没登记进 `sidebar.ts`（文章暂时无法被访问）；**仅警告不拦截**——报出 ⚠ 但退出码 0，提醒你尽快登记
 3. **未注册**：新增栏目忘记在 `theme-config.ts` 注册 nav/sidebar
 
 ## 提交约定

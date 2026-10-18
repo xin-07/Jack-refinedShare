@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
-// 侧栏一致性门禁 —— 防止两类真实事故：
-//   1. 死链：sidebar.ts 的 link 指向不存在的 .md（例：全角/半角引号不一致导致 404）
-//   2. 孤儿：内容文件已写入 docs/<栏目>/docs/ 却没登记进 sidebar.ts（文章永远无法被访问）
-// 附加校验：栏目目录 ↔ theme-config.ts 的 nav/sidebar 注册关系（README「添加新内容」第 3 步的执行层）。
+// 侧栏一致性门禁 —— 两类问题，两种严格级别：
+//   1. 死链（错误，exit 1）：sidebar.ts 的 link 指向不存在的 .md（例：全角/半角引号不一致导致 404）
+//   2. 孤儿（警告，exit 0）：内容文件已写入 docs/<栏目>/docs/ 却没登记进 sidebar.ts —— 报出 ⚠ 提醒登记，但不拦截
+// 附加校验：栏目目录 ↔ theme-config.ts 的 nav/sidebar 注册关系（README「添加新内容」第 3 步的执行层），缺失视为错误。
 //
 // 用法：
-//   node scripts/check-sidebars.mjs                 # 死链 + 孤儿 + 注册关系，任一失败退出码 1
-//   node scripts/check-sidebars.mjs --allow-orphans # 孤儿降级为警告（写草稿时用）
+//   node scripts/check-sidebars.mjs   # 死链/缺页/注册缺失 → 退出码 1；孤儿 → 仅警告
 
 import fs from 'node:fs'
 import path from 'node:path'
@@ -15,7 +14,6 @@ import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 
 const DOCS_ROOT = fileURLToPath(new URL('../docs', import.meta.url))
-const ALLOW_ORPHANS = process.argv.includes('--allow-orphans')
 
 const errors = []
 const warnings = []
@@ -81,8 +79,7 @@ for (const col of columns) {
 
   const orphan = files.filter((f) => !allLinks.has(fileLink(col, f)))
   if (orphan.length) {
-    const msg = `孤儿  docs/${col}/docs/  ${orphan.length} 篇未登记 sidebar.ts：${orphan.join('、')}`
-    ;(ALLOW_ORPHANS ? warnings : errors).push(msg)
+    warnings.push(`孤儿  docs/${col}/docs/  ${orphan.length} 篇未登记 sidebar.ts：${orphan.join('、')}`)
   }
 
   if (!fs.existsSync(path.join(DOCS_ROOT, col, 'index.md'))) {

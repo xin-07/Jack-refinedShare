@@ -106,7 +106,7 @@ Jack-member/
 3. 如需新增栏目，在 `docs/.vitepress/theme-config.ts` 中注册 `sidebar.ts` 并添加导航与侧边栏配置
 4. 运行 `bun run check` 校验（`bun run build` 会自动执行；push 前 `.husky/pre-push` 也会自动跑一次）：
    - **死链**：侧栏 link 指向不存在的文件
-   - **孤儿**：文件没登记进 `sidebar.ts`（写草稿时可用 `node scripts/check-sidebars.mjs --allow-orphans` 临时降级为警告）
+   - **孤儿**：文件没登记进 `sidebar.ts`（**仅警告不拦截**，报出 ⚠ 但校验仍通过，提醒你尽快登记）
    - **未注册**：新栏目忘记在 `theme-config.ts` 注册
 
 ## 部署
