@@ -5,6 +5,7 @@ import sidebarThinking from '../《思考，快与慢》/sidebar'
 import sidebarIsland from '../《小岛经济学》/sidebar'
 import sidebarRichDad from '../《穷爸爸富爸爸》/sidebar'
 import sidebarCourage from '../《被讨厌的勇气》/sidebar'
+import sidebarPrinciples from '../《原则》/sidebar'
 import sidebarExquisite from '../Exquisite/sidebar'
 import sidebarOther from '../Other/sidebar'
 
@@ -19,6 +20,7 @@ const nav: DefaultTheme.NavItem[] = [
       { text: '《思考，快与慢》', link: '/《思考，快与慢》/index', activeMatch: '/《思考，快与慢》/' },
       { text: '《穷爸爸富爸爸》', link: '/《穷爸爸富爸爸》/index', activeMatch: '/《穷爸爸富爸爸》/' },
       { text: '《被讨厌的勇气》', link: '/《被讨厌的勇气》/index', activeMatch: '/《被讨厌的勇气》/' },
+      { text: '《原则》', link: '/《原则》/index', activeMatch: '/《原则》/' },
     ],
   },
   { text: 'Exquisite', link: '/Exquisite/index', activeMatch: '/Exquisite/' },
@@ -32,6 +34,7 @@ const sidebar: DefaultTheme.Sidebar = {
   '/《小岛经济学》/': [sidebarIsland],
   '/《穷爸爸富爸爸》/': [sidebarRichDad],
   '/《被讨厌的勇气》/': [sidebarCourage],
+  '/《原则》/': [sidebarPrinciples],
   '/Exquisite/': [sidebarExquisite],
   '/Other/': [sidebarOther],
 }
