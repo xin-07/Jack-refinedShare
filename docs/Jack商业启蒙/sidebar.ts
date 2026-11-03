@@ -19,6 +19,12 @@ const sidebarBusiness: DefaultTheme.SidebarGroup = {
     { text: 'HBM、DRAM、NAND', link: '/Jack商业启蒙/docs/Jack商业启蒙——HBM、DRAM、NAND' },
     { text: '数据中心', link: '/Jack商业启蒙/docs/Jack商业启蒙——数据中心' },
     { text: '特斯拉', link: '/Jack商业启蒙/docs/Jack商业启蒙——特斯拉' },
+    { text: '台积电', link: '/Jack商业启蒙/docs/Jack商业启蒙——台积电' },
+    { text: 'AI投资', link: '/Jack商业启蒙/docs/Jack商业启蒙——AI投资' },
+    { text: '伯克希尔', link: '/Jack商业启蒙/docs/Jack商业启蒙——伯克希尔' },
+    { text: '可口可乐', link: '/Jack商业启蒙/docs/Jack商业启蒙——可口可乐' },
+    { text: '魔爪', link: '/Jack商业启蒙/docs/Jack商业启蒙——魔爪' },
+    { text: '《广场协议》', link: '/Jack商业启蒙/docs/Jack商业启蒙——《广场协议》' },
   ],
 }
 
