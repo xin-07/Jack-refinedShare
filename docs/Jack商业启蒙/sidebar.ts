@@ -24,7 +24,7 @@ const sidebarBusiness: DefaultTheme.SidebarGroup = {
     { text: '伯克希尔', link: '/Jack商业启蒙/docs/Jack商业启蒙——伯克希尔' },
     { text: '可口可乐', link: '/Jack商业启蒙/docs/Jack商业启蒙——可口可乐' },
     { text: '魔爪', link: '/Jack商业启蒙/docs/Jack商业启蒙——魔爪' },
-    { text: '《广场协议》', link: '/Jack商业启蒙/docs/Jack商业启蒙——《广场协议》' },
+    { text: '消失的30年去了哪', link: '/Jack商业启蒙/docs/Jack商业启蒙——消失的30年去了哪' },
   ],
 }
 
