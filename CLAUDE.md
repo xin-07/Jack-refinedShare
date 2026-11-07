@@ -15,7 +15,7 @@
 
 ```
 Jack-member/
-├── package.json                # scripts: dev / check / build / serve / deploy
+├── package.json                # scripts: dev / check / build / serve
 ├── scripts/
 │   ├── check-commit-msg.js     # commit-msg 门禁（Why:/What:）
 │   └── check-sidebars.mjs      # 侧栏↔文件一致性门禁（死链/孤儿/注册关系）
@@ -34,6 +34,8 @@ Jack-member/
     ├── 《小岛经济学》/           # 读书笔记
     ├── 《穷爸爸富爸爸》/         # 读书笔记
     ├── 《被讨厌的勇气》/         # 读书笔记
+    ├── 《原则》/                # 读书笔记（每日正文 + 答案）
+    ├── 电影/                   # 电影推荐与解读
     ├── Exquisite/              # 精选内容
     └── Other/                  # 频道思考与分享
 ```

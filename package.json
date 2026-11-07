@@ -9,7 +9,6 @@
     "check": "node scripts/check-sidebars.mjs",
     "build": "node scripts/check-sidebars.mjs && vitepress build docs",
     "serve": "vitepress serve docs",
-    "deploy": "bun run build && npx wrangler deploy",
     "prepare": "husky"
   },
   "devDependencies": {
