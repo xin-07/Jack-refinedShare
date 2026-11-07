@@ -8,6 +8,7 @@ import sidebarCourage from '../《被讨厌的勇气》/sidebar'
 import sidebarPrinciples from '../《原则》/sidebar'
 import sidebarExquisite from '../Exquisite/sidebar'
 import sidebarOther from '../Other/sidebar'
+import sidebarMovie from '../电影/sidebar'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '首页', link: '/', activeMatch: '^/$' },
@@ -23,6 +24,7 @@ const nav: DefaultTheme.NavItem[] = [
       { text: '《原则》', link: '/《原则》/index', activeMatch: '/《原则》/' },
     ],
   },
+  { text: '电影', link: '/电影/index', activeMatch: '/电影/' },
   { text: 'Exquisite', link: '/Exquisite/index', activeMatch: '/Exquisite/' },
   { text: 'Other', link: '/Other/index', activeMatch: '/Other/' },
 ]
@@ -37,6 +39,7 @@ const sidebar: DefaultTheme.Sidebar = {
   '/《原则》/': [sidebarPrinciples],
   '/Exquisite/': [sidebarExquisite],
   '/Other/': [sidebarOther],
+  '/电影/': [sidebarMovie],
 }
 
 export { nav, sidebar }
