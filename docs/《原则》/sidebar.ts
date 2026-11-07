@@ -17,6 +17,14 @@ const sidebarPrinciples: DefaultTheme.SidebarGroup = {
     { text: '第一周总结与第二周预告', link: '/《原则》/docs/《原则》｜第一周总结与第二周预告' },
     { text: '第6天', link: '/《原则》/docs/《原则》｜第6天' },
     { text: '第6天 答案', link: '/《原则》/docs/《原则》｜第6天答案' },
+    { text: '第7天', link: '/《原则》/docs/《原则》｜第7天' },
+    { text: '第7天 答案', link: '/《原则》/docs/《原则》｜第7天答案' },
+    { text: '第8天', link: '/《原则》/docs/《原则》｜第8天' },
+    { text: '第8天 答案', link: '/《原则》/docs/《原则》｜第8天答案' },
+    { text: '第9天', link: '/《原则》/docs/《原则》｜第9天' },
+    { text: '第9天 答案', link: '/《原则》/docs/《原则》｜第9天答案' },
+    { text: '第10天', link: '/《原则》/docs/《原则》｜第10天' },
+    { text: '第10天 答案', link: '/《原则》/docs/《原则》｜第10天答案' },
   ],
 }
 
