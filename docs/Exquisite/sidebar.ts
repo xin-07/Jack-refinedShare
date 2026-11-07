@@ -12,6 +12,7 @@ const sidebarExquisite: DefaultTheme.SidebarGroup = {
     { text: '未来真正稀缺的，可能不是信息，而是判断力', link: '/Exquisite/docs/未来真正稀缺的，可能不是信息，而是判断力' },
     { text: 'AI时代，阅读、专注、提问，比背答案重要100倍', link: '/Exquisite/docs/AI时代，阅读、专注、提问，比背答案重要100倍' },
     { text: '改命最好的办法：写日记', link: '/Exquisite/docs/Jack要加油 365天思想实验 第157天' },
+    { text: '影响健康的因素', link: '/Exquisite/docs/影响健康的因素' },
   ],
 }
 
