@@ -163,6 +163,7 @@ const sidebar365: DefaultTheme.SidebarGroup = {
     { text: '第160天 抗生素耐药性', link: '/365天思想实验/docs/Jack要加油 365天思想实验 第160天' },
     { text: '第161天 这几类人值得深交', link: '/365天思想实验/docs/Jack要加油 365天思想实验 第161天' },
     { text: '第162天 如何找到一生的使命', link: '/365天思想实验/docs/Jack要加油 365天思想实验 第162天' },
+    { text: '第163天 一件小事如何毁掉你一整天', link: '/365天思想实验/docs/Jack要加油 365天思想实验 第163天' },
   ],
 }
 
