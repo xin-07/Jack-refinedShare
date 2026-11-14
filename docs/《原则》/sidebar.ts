@@ -25,6 +25,17 @@ const sidebarPrinciples: DefaultTheme.SidebarGroup = {
     { text: '第9天 答案', link: '/《原则》/docs/《原则》｜第9天答案' },
     { text: '第10天', link: '/《原则》/docs/《原则》｜第10天' },
     { text: '第10天 答案', link: '/《原则》/docs/《原则》｜第10天答案' },
+    { text: '第二周总结', link: '/《原则》/docs/《原则》｜第二周总结' },
+    { text: '第11天', link: '/《原则》/docs/《原则》｜第11天' },
+    { text: '第11天 答案', link: '/《原则》/docs/《原则》｜第11天答案' },
+    { text: '第12天', link: '/《原则》/docs/《原则》｜第12天' },
+    { text: '第12天 答案', link: '/《原则》/docs/《原则》｜第12天答案' },
+    { text: '第13天', link: '/《原则》/docs/《原则》｜第13天' },
+    { text: '第13天 答案', link: '/《原则》/docs/《原则》｜第13天答案' },
+    { text: '第14天', link: '/《原则》/docs/《原则》｜第14天' },
+    { text: '第14天 答案', link: '/《原则》/docs/《原则》｜第14天答案' },
+    { text: '第15天', link: '/《原则》/docs/《原则》｜第15天' },
+    { text: '第15天 答案', link: '/《原则》/docs/《原则》｜第15天答案' },
   ],
 }
 
