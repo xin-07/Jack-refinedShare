@@ -15,6 +15,9 @@ const sidebarJackSuibi: DefaultTheme.SidebarGroup = {
     { text: '幸存者筛选与概率思维', link: '/Jack随笔/docs/幸存者筛选与概率思维' },
 
     // 日期篇目 - 按日期从新到旧排列
+    { text: '11月20日 读皮亚杰认知发展理论有感', link: '/Jack随笔/docs/11月20日 读皮亚杰认知发展理论有感' },
+    { text: '11月20日 企业生存法则与人生策划', link: '/Jack随笔/docs/11月20日 企业生存法则与人生策划' },
+    { text: '11月16日 你想成为哪类人', link: '/Jack随笔/docs/11月16日 你想成为哪类人' },
     { text: '11月14日 AI时代财富分配的框架', link: '/Jack随笔/docs/11月14日 AI时代财富分配的框架' },
     { text: '11月12日 Sell Put心得', link: '/Jack随笔/docs/11月12日 Sell Put心得' },
     { text: '11月7日 无限比较与欲望', link: '/Jack随笔/docs/11月7日 无限比较与欲望' },
